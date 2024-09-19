@@ -1,0 +1,442 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar-default {
+    background-color: #57c1ff;
+    color: #fff;
+    padding:10px ;
+    padding-bottom:0px ;
+    position: sticky;
+    top: 0;
+    z-index: 996;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-nav .nav-item {
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: 	#FFF;
+    text-decoration: none;
+}
+
+/* Toolbar container styles */
+.toolbar-container {
+    background-color: #57c1ff; /* Match this to your website's background color */
+    padding: 0px; /* Space around the toolbar */
+}
+
+/* Toolbar styles */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF; /* Dark gray background color for the toolbar */
+    padding: 10px;
+     border-top-left-radius: 7px;
+     border-top-RIGHT-radius: 7px;/* Adds rounded corners to the toolbar */
+ box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow above the toolbar */
+    position: sticky;
+    top: 60px;
+    z-index: 997;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    align-items: center;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 10px;
+     transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.btn-default {
+    background-color: #b7b7b7;
+    color: #252423;
+}
+
+/* Icon button styles */
+.btn-icon {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between the buttons */
+    display: flex;
+    align-items: center; /* Aligns the image vertically */
+    height: 40px; /* Same height as other buttons */
+}
+
+.icon-button {
+    width: 40px; /* Adjust icon size */
+    height: 40px; /* Adjust icon size */
+    display: block;
+    margin: auto; /* Centers the icon */
+}/* Scrollable Container for Table */
+.table-container {
+    max-height: 800px;
+    padding: 0px;
+    overflow-y: auto;
+    margin-top: 0;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0,0.1); /* Adds shadow above the toolbar */
+    border-radius: 7px;
+    position: relative;
+        z-index: 998;
+}
+
+
+/* Table styles */
+.table {
+    width: 100%;
+    margin-top: 0;
+     border-spacing: 0; /* Ensures that there is no gap between the borders */
+   
+    background-color: #fff;
+    table-layout: auto;
+}
+
+
+
+.table th {
+    background-color: #baedff;
+    padding: 10px;
+    border-bottom: 2px solid #f9f9f9;
+    
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* Table row styles for alternating colors */
+.table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Light color for odd rows */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Slightly darker color for even rows */
+}
+
+.table td {
+ 
+    border-spacing: 3px; /* Ensures that there is no gap between the borders */
+    padding: 2px;
+    border: 1px solid #f9f9f9;
+    text-align: left;
+}
+
+/* Style dropdowns to remove borders while keeping the arrow */
+select {
+    border: none; /* Removes the border */
+    background-color: transparent; /* Makes the background color transparent */
+    outline: none; /* Removes the focus outline */
+    font-size: 14px; /* Adjusts the font size */
+    padding: 4px; /* Adds padding for better alignment */
+    appearance: none; /* Use if needed, remove for specific browser support */
+    -webkit-appearance: menulist; /* Keeps the dropdown arrow in Safari */
+    -moz-appearance: menulist; /* Keeps the dropdown arrow in Firefox */
+}
+
+/* Add a custom appearance for dropdowns */
+select::-ms-expand {
+    display: block; /* For Internet Explorer */
+}
+
+
+
+/* Hide the default file input */
+.file-input {
+    display: none;
+}
+
+/* Add CSS for default image symbol */
+.custom-file-upload img {
+    cursor: pointer;
+}
+
+.custom-file-upload img:hover {
+    opacity: 0.8;
+}
+
+
+
+
+/* Tag Container */
+.tag-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: #4285F4;
+    margin-top: 20px;
+}
+
+/* Tag Styling */
+.tag {
+    position: relative;
+    width: 650px;
+    height: 400px;
+    background: #4285F4;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Header Container */
+.header-container {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: grid;
+    grid-template-columns: 27.5fr 72.5fr;
+    grid-template-rows: repeat(2, 40px);
+    width: calc(100% - 40px);
+    height: 80px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Header Item Styling */
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFF00;
+    border: 0.5px solid #4285F4;
+    font-weight: bold;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.header-item:first-child {
+    border-top-left-radius: 5px;
+}
+
+.header-item:nth-child(2) {
+    border-top-right-radius: 5px;
+}
+
+.header-item:nth-child(3) {
+    border-bottom-left-radius: 5px;
+}
+
+.header-item:nth-child(4) {
+    border-bottom-right-radius: 5px;
+}
+
+/* Content Container */
+.content-container {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(55% - 22px);
+    height: 250px;
+}
+
+/* Content Label Styling */
+.content-label {
+    background: #9AD6E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4285F4;
+    font-weight: bold;
+}
+
+/* Content Value Styling */
+.content-value {
+    background: #9AD6E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4285F4;
+}
+/* Rounded corners for specific content items */
+.content-label:first-child { /* Top left */
+    border-top-left-radius: 5px;
+}
+.content-label:nth-child(13) { /* Bottom left */
+    border-bottom-left-radius: 5px;
+}
+
+/* Highlighted Values */
+.content-value-high {
+    background: #ff9393;
+    color: #000;
+}
+
+.content-value-medium {
+    background: #fbe76e;
+    color: #000;
+}
+
+.content-value-low {
+    background: #bafb6e;
+    color: #000;
+}
+
+/* Image Container */
+.image-container {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    width: calc(45% - 21px);
+    height: 248px;
+    background-color: #8BB6FD;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4285F4;
+}
+
+/* Image Styling */
+.image-container img {
+    width: 100%;
+    height: 248px;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Print header styles */
+.print-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.print-header .header-left h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #57c1ff;
+}
+
+.print-header .header-right p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Print Styles */
+@media print {
+    @page {
+        size: A4 landscape;
+        margin: 0;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+
+    body {
+        margin: 0;
+        background-color: #fff;
+    }
+
+    .tag {
+        transform: scale(0.7);
+        transform-origin: top left;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 650px;
+        height: 400px;
+        background: #4285F4;
+        box-sizing: border-box;
+        padding: 30px;
+    }
+
+   /* Print Styles */
+@media print {
+    @page {
+        size: A4 landscape;
+        margin: 0;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+
+    body {
+        margin: 0;
+        background-color: #fff;
+    }
+
+    .navbar-default,
+    .toolbar,
+    #tagsSection {
+        display: none !important;
+    }
+
+    .print-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 2px solid #ddd;
+        margin-bottom: 20px;
+    }
+
+    .table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .table th,
+    .table td {
+        border: 1px solid #000; /* Adds solid borders for Excel-like appearance */
+        padding: 8px;
+        text-align: left;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+    }
+
+    .table th {
+        background-color: #d9d9d9; /* Light gray background for the header */
+        font-weight: bold;
+    }
+
+    .table tbody tr:nth-child(odd) {
+        background-color: #f9f9f9; /* Light color for odd rows */
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: #ffffff; /* White color for even rows */
+    }
+}
+
+
+}

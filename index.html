@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobility Tags</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+  
+
+    <!-- Navbar -->
+    <nav class="navbar-default sticky-header">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mobility Tags</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">by Manish Darishetty</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="toolbar-container">
+    <div class="toolbar">
+        <!-- Toolbar content goes here -->
+ 
+
+            <!-- Location Dropdown -->
+            <div>
+                <label for="locationSelect">Location: </label>
+                <select id="locationSelect">
+                    <option value="">Select Location</option>
+                    <option value="Thornton Park">Thornton Park</option>
+                    <option value="Tallawong">Tallawong</option>
+                </select>
+            </div>
+            <!-- Buttons for Viewing Report and Printing Table -->
+            <div class="button-group">
+                <button id="viewReportBtn" class="btn btn-default">View Report</button>
+         
+
+                <!-- Printer Icon Button -->
+                <button id="printTableBtn" class="btn-icon" title="Print Table">
+                    <img src="https://assets.onecompiler.app/42rmphu53/42savbrt3/print-icon-symbol-design-illustration-vector.jpg" alt="Print Table" class="icon-button">
+                </button>
+            </div>
+        </div>
+           </div>
+</div>
+
+        <!-- Editable Table for Report Data -->
+        <div class="table-container">
+            <table class="table" id="reportTable" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Room</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Transfers</th>
+                        <th>Mobility</th>
+                        <th>Hip Protectors</th>
+                        <th>Head Protector</th>
+                        <th>Walk Belt</th>
+                        <th>Assist</th>
+                        <th>Falls Risk</th>
+                        <th>Get Tag</th>
+                    </tr>
+                </thead>
+                <tbody id="reportTableBody">
+                    <!-- Data will be dynamically populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Include JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
